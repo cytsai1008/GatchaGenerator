@@ -2,7 +2,7 @@ from threading import Thread
 
 import flask
 
-app: flask.Flask = flask.Flask("")
+app: flask.Flask = flask.Flask(__name__, template_folder='/home/cytsai1008/mysite/templates/')
 
 
 @app.route("/")
