@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gatcha Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas/4.0.4/tocas.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas/4.0.4/tocas.min.js"></script>
+</head>
+<body>
+<div class="ts-center">
+  <div class="ts-box is-very-elevated is-collapsed">
+    <div class="ts-content is-tertiary is-dense">
+      <div class="ts-text is-large ts-center is-heavy">Gatcha Generator</div>
+    </div>
+    <div class="ts-content">
+      <form action="/gatcha" method="get">
+        <div class="ts-wrap is-vertical">
+          <div class="ts-input is-fluid is-medium is-solid">
+            <input type="number"
+                   placeholder="輸入整數SSR機率" id="SSR_input" required="" name="SSR_input">
+          </div>
+          <div class="ts-input is-fluid is-medium is-solid">
+            <input class="ts-input is-fluid is-medium is-solid" type="number"
+                   placeholder="輸入整數SR機率" id="SR_input" required="" name="SR_input">
+          </div>
+          <div class="ts-input is-fluid is-medium is-solid">
+            <input class="ts-input is-fluid is-medium is-solid" type="number"
+                   placeholder="輸入整數R機率" id="R_input" required="" name="R_input">
+          </div>
+          <div class="ts-input is-fluid is-medium is-solid">
+            <input class="ts-input is-fluid is-medium is-solid" type="number"
+                   placeholder="輸入整數N機率" id="N_input" required="" name="N_input">
+          </div>
+          <div class="ts-row is-evenly-divided">
+            <div class="column">
+              <button class="ts-button is-fluid" name="one" value="true">
+                <span class="ts-text is-medium is-heavy">抽1次</span>
+              </button>
+            </div>
+            <div class="column">
+              <button class="ts-button is-fluid" name="ten" value="true">
+                <span class="ts-text is-medium is-heavy">抽10次</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
