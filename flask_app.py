@@ -2,7 +2,9 @@ from threading import Thread
 
 import flask
 
-app: flask.Flask = flask.Flask(__name__, template_folder='/home/cytsai1008/mysite/templates/')
+app: flask.Flask = flask.Flask(
+    __name__, template_folder="/home/cytsai1008/mysite/templates/"
+)
 
 
 @app.route("/")
@@ -12,10 +14,10 @@ def home():
 
 @app.route("/gatcha")
 def gatcha():
-    SSR_input = flask.request.args.get("SSR_input", default=0, type=int)
-    SR_input = flask.request.args.get("SR_input", default=0, type=int)
-    R_input = flask.request.args.get("R_input", default=0, type=int)
-    N_input = flask.request.args.get("N_input", default=0, type=int)
+    SSR_input = 2
+    SR_input = 8
+    R_input = 50
+    N_input = 40
     one = flask.request.args.get(
         "one",
         default=None,
